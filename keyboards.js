@@ -1,23 +1,24 @@
-module.exports = {
-    keyboardStart: {
-        reply_markup: JSON.stringify({
-            inline_keyboard: [
-                [{
-                    text: 'Доступні команди',
-                    callback_data: 'help'
-                }],
-            ]
-        })
-    },
-
-    keyboardHelp: {
-        reply_markup: JSON.stringify({
-            inline_keyboard: [
-                [{
-                    text: 'Актуальний курс валют',
-                    callback_data: '1'
-                }],
-            ]
-        })
-    }
+export const keyboardStart = {
+    reply_markup: JSON.stringify({
+        inline_keyboard: [
+            [{
+                text: 'Доступні команди',
+                callback_data: 'help'
+            }],
+        ]
+    })
+};
+export const keyboardHelp = {
+    reply_markup: JSON.stringify({
+        inline_keyboard: [
+            [{
+                text: 'Актуальний курс долара',
+                callback_data: 'usd'
+            }],
+            [{
+                text: 'Актуальний курс євро',
+                callback_data: '1'
+            }],
+        ]
+    })
 };
