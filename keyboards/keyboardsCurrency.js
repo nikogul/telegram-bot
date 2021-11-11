@@ -1,14 +1,4 @@
-export const keyboardStart = {
-    reply_markup: JSON.stringify({
-        inline_keyboard: [
-            [{
-                text: 'Доступні команди',
-                callback_data: 'help'
-            }],
-        ]
-    })
-};
-export const keyboardHelp = {
+export const keyboardCurrency = {
     reply_markup: JSON.stringify({
         inline_keyboard: [
             [{
@@ -17,7 +7,11 @@ export const keyboardHelp = {
             }],
             [{
                 text: 'Актуальний курс євро',
-                callback_data: '1'
+                callback_data: 'eur'
+            }],
+            [{
+                text: 'Актуальний курс рубля',
+                callback_data: 'rub'
             }],
         ]
     })
